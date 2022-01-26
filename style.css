@@ -39,6 +39,7 @@ body{
         "ttlBtn ttlBtn ttlBtn"
         "urlBtn urlBtn urlBtn"
         "markBtn markBtn markBtn"
+        "decodedUrlBtn decodedUrlBtn decodedUrlBtn"
         "result result copyBtn"
         "...... msg msg"
         "notice notice notice";
@@ -60,6 +61,9 @@ button.url{
 }
 button.bmark{
     grid-area: markBtn;
+}
+button.bdecodedUrl{
+    grid-area: decodedUrlBtn;
 }
 p{
     width: max-content;

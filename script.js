@@ -18,6 +18,10 @@ window.addEventListener('load',()=>{
     document.querySelector('button.bmark').addEventListener('click',()=>{
         txtBox.value = `[${Data.Title}](${Data.URL})`;
     });
+    document.querySelector('button.bdecodedUrl').addEventListener('click',()=>{
+        const decoUrl = Data.URL.replace('https://docs.google.com/viewer?url=', '');
+        txtBox.value = decodeURIComponent(decoUrl);
+    });
 
     const cb = new ClipboardJS('button.copy');
     const msgContainer = document.querySelector('div.msg');
